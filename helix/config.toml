@@ -1,0 +1,35 @@
+theme = "dracula_helix"
+
+[editor]
+rulers = [80, 100]
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+[editor.statusline]
+right = [
+  "diagnostics",
+  "selections",
+  "primary-selection-length",
+  "spacer",
+  "position",
+  "position-percentage",
+  "spacer",
+  "file-encoding",
+]
+
+
+[keys.normal]
+"}" = "goto_next_paragraph"
+"{" = "goto_prev_paragraph"
+
+[keys.normal.space]
+v = [":vs", "file_picker"]
+w = ":w"
+q = ":q"
+space = "rotate_view"
